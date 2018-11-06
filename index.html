@@ -12,14 +12,17 @@
             <div class="row">
                 <center><h1>Email Sending With Attachments in Servlet java.</h1></center>
                 <div class="contact-form col-md-6 text-center">
-                <div><img src="https://i.imgur.com/mXxTypx.jpg" alt="Boy" width="250" height="250" /><br><br><br></div>
-                    <div>
+              
+                  <form id="form" enctype="multipart/form-data" action="EmailAttachment" method="post" accept-charset="utf-8">
+	            <div class="form-group">
+			 <img src="https://i.imgur.com/mXxTypx.jpg" alt="Boy" width="350" height="350" /><br><br><br>
+	            </div>
+                    <div class="form-group">
 			<video width="400"  controls loop>
                              <source src="https://i.imgur.com/pM0LI1B.mp4" type="video/mp4">
                               Your browser does not support HTML5 video.
                         </video>
                    </div>
-                  <form id="form" enctype="multipart/form-data" action="EmailAttachment" method="post" accept-charset="utf-8">
                      <div class="form-group">
                         <input type="text" required="" placeholder="Your name" class="form-control" name="name" id="name"/>
                      </div>
